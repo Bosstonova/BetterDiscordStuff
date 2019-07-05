@@ -44,7 +44,7 @@ class global.QuickDeleteMessages
   qualifies = ".content-3dzVd8"
 
   onClick = (event) ->
-    return unless AsyncKeystate.key("Delete") or
+    return unless AsyncKeystate.key("ControlLeft") or
       "darwin" is process.platform and AsyncKeystate.key "Backspace"
 
     {path: [element], shiftKey} = event
